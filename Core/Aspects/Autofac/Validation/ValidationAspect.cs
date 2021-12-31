@@ -12,6 +12,7 @@ namespace Core.Aspects.Autofac.Validation
 {
     public class ValidationAspect : MethodInterception
     {
+        //defensive coding
         private Type _validatorType;
         public ValidationAspect(Type validatorType)
         {
